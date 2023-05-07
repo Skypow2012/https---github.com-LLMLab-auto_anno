@@ -6,7 +6,9 @@ import openai
 import numpy as np
 # import matplotlib
 # print(matplotlib.matplotlib_fname())
-from config import openai_key
+import sys
+sys.path.append('.')
+from local_config import openai_key
 
 
 def cluster_text(text_list, n_clusters=20, openai_api_key=openai_key):

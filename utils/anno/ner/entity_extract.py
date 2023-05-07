@@ -1,6 +1,8 @@
 import openai
 import json
-from config import openai_key
+import sys
+sys.path.append('.')
+from local_config import openai_key
 
 # Set up your API key
 openai.api_key = openai_key
